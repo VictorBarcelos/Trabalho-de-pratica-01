@@ -3,13 +3,13 @@ menor_q_160 = entre_160_e_180 = maior_q_180 = 0
 for cont in range(3):
     altura = float(input('Digite sua altura: '))
 
-    if altura <= 1.60:
+    if altura < 1.60:
         menor_q_160 =+ 1
 
-    elif 1.60 < altura < 1.80:
+    elif 1.80 >= altura >= 1.60:
         entre_160_e_180 =+ 1
 
-    elif altura >= 1.80:
+    else:
         maior_q_180 =+ 1
 
 print("--------------------------------------------")
